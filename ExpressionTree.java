@@ -108,8 +108,8 @@ public static void main(String[] args){
       return "" + getValue();
     }
     else {
-      return getLeft().toString() + " " +
-             getRight().toString() + " " +
+      return getLeft().toStringPostfix() + " " +
+             getRight().toStringPostfix() + " " +
              getOp();
     }
   }
@@ -120,8 +120,8 @@ public static void main(String[] args){
     }
     else {
       return getOp() + " " +
-             getLeft().toString() + " " +
-             getRight().toString();
+             getLeft().toStringPrefix() + " " +
+             getRight().toStringPrefix();
     }
   }
 
